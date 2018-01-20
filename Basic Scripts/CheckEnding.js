@@ -6,4 +6,8 @@ function confirmEnding(str, target) {
   return false;
 }
 
+function betterConfirmEnding(str, target) {
+  return str.substr(-target.length) === target;
+}
+
 confirmEnding("Bastian", "n");
